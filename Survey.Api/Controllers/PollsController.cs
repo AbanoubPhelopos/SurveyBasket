@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Survey.Api.Models;
-
-namespace Survey.Api.Controllers;
-
+﻿namespace Survey.Api.Controllers;
 public class PollsController : BaseApiController
 {
 

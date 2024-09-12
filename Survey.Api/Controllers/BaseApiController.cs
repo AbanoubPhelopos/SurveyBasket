@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace Survey.Api.Controllers;
+﻿namespace Survey.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

@@ -1,4 +1,4 @@
-﻿namespace Survey.Api.Models;
+﻿namespace Survey.Application.Models;
 
 public class Poll
 {
