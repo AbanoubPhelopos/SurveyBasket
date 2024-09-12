@@ -17,4 +17,15 @@ public class PollServices : IPollServices
         _polls.Add(request);
         return request;
     }
+
+    public bool Update(Guid id, Poll request)
+    {
+        var currentPoll = Get(id);
+
+        if (currentPoll is null)
+            return false;
+        currentPoll.Title = request.Title;
+        currentPoll.Description = request.Description;
+        return true;
+    }
 }

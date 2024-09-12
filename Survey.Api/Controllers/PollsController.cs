@@ -24,5 +24,14 @@ public class PollsController(IPollServices services) : BaseApiController
         var newRequest = services.Add(request.MapToPoll());
         return CreatedAtAction(nameof(Get), new {id = newRequest.Id}, newRequest);
     }
+
+    [HttpPut("{id}")]
+    public IActionResult Update(Guid id, UpdatePollRequest request)
+    {
+        var isUpdated = services.Update(id, request.MapToPoll(id));
+        if (!isUpdated)
+            return NotFound();
+        return NoContent();
+    }
     
 }

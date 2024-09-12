@@ -19,7 +19,7 @@ public static class ContractMapping
     {
         return new Poll()
         {
-            Id= Guid.NewGuid(),
+            Id= id,
             Title = request.Title,
             Description = request.Description
         };
