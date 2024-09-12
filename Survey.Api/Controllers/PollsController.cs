@@ -33,5 +33,14 @@ public class PollsController(IPollServices services) : BaseApiController
             return NotFound();
         return NoContent();
     }
+
+    [HttpDelete("{id}")]
+    public IActionResult Delete(Guid id)
+    {
+        var sDeleted = services.Delete(id);
+        if (!sDeleted)
+            return NotFound();
+        return NoContent();
+    }
     
 }

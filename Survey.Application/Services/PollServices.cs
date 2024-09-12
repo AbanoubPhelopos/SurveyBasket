@@ -28,4 +28,14 @@ public class PollServices : IPollServices
         currentPoll.Description = request.Description;
         return true;
     }
+
+    public bool Delete(Guid id)
+    {
+        var poll = Get(id);
+
+        if (poll is null)
+            return false;
+        _polls.Remove(poll);
+        return true;
+    }
 }

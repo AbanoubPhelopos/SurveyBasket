@@ -6,4 +6,5 @@ public interface IPollServices
     Poll? Get(Guid Id);
     Poll Add(Poll request);
     bool Update(Guid id,Poll request);
+    bool Delete(Guid id);
 }
