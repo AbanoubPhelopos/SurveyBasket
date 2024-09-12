@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Survey.Api", "Survey.Api\Survey.Api.csproj", "{997883CA-C140-4A65-A908-20386540212C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Survey.Application", "Survey.Application\Survey.Application.csproj", "{1FE60F0A-F42B-407A-BA4B-2CC99CD40041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Survey.Contract", "Survey.Contract\Survey.Contract.csproj", "{EE5428C2-7262-47D3-AE44-E9DCC98842C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{997883CA-C140-4A65-A908-20386540212C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{997883CA-C140-4A65-A908-20386540212C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{997883CA-C140-4A65-A908-20386540212C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE60F0A-F42B-407A-BA4B-2CC99CD40041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE60F0A-F42B-407A-BA4B-2CC99CD40041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE60F0A-F42B-407A-BA4B-2CC99CD40041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE60F0A-F42B-407A-BA4B-2CC99CD40041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5428C2-7262-47D3-AE44-E9DCC98842C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5428C2-7262-47D3-AE44-E9DCC98842C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5428C2-7262-47D3-AE44-E9DCC98842C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5428C2-7262-47D3-AE44-E9DCC98842C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
