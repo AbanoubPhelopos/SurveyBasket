@@ -2,5 +2,5 @@
 
 public class PollsResponse
 {
-    public IEnumerable<PollResponse> Polls;
+    public IEnumerable<PollResponse> Items { get; init; } = Enumerable.Empty<PollResponse>();
 }
