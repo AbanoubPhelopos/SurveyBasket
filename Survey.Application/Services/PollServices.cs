@@ -2,7 +2,7 @@
 
 public class PollServices : IPollServices
 {
-    List<Poll> _polls = new List<Poll>
+    private static List<Poll> _polls = new List<Poll>
     {
         new Poll { Id = Guid.NewGuid(), Title = "Favorite Movie", Description = "Vote for your favorite movie." },
         new Poll { Id = Guid.NewGuid(), Title = "Best Vacation Destination", Description = "Choose the best place to go on vacation." },
@@ -12,4 +12,9 @@ public class PollServices : IPollServices
     };
     public List<Poll> GetAll() => _polls;
     public Poll? Get(Guid id) => _polls.SingleOrDefault(p => p.Id == id);
+    public Poll Add(Poll request)
+    {
+        _polls.Add(request);
+        return request;
+    }
 }
