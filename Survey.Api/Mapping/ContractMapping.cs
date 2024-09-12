@@ -15,7 +15,7 @@ public static class ContractMapping
             Description = request.Description
         };
     }
-    public static Poll MapToMovie(this UpdatePollRequest request,Guid id)
+    public static Poll MapToPoll(this UpdatePollRequest request,Guid id)
     {
         return new Poll()
         {

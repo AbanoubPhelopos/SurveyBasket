@@ -1,25 +1,26 @@
-﻿namespace Survey.Api.Controllers;
+﻿using Survey.Api.Mapping;
+using Survey.Application.Services;
+
+namespace Survey.Api.Controllers;
 public class PollsController : BaseApiController
 {
+    private readonly IPollServices _services;
 
-    private readonly List<Poll> _poll = [
-        new Poll
-        {  Title = "ll", Description = "lol1" },
-        new Poll
-        { Title = "ll", Description = "lol2" },
-        new Poll
-        { Title = "ll", Description = "lol3" },
-    ];
+    public PollsController(IPollServices services)
+    {
+        _services = services;
+    }
 
     [HttpGet("")]
     public IActionResult GetAll()
     {
-        return Ok(_poll);
+        var pollResponse = _services.GetAll().MapToResponse();
+        return Ok(pollResponse);
     }
     [HttpGet("{id}")]
     public IActionResult Get(Guid id)
     {
-        var poll = _poll.SingleOrDefault(p => p.Id == id);
-        return poll is null ? NotFound() : Ok(poll);
+        var poll = _services.Get(id);
+        return poll is null ? NotFound() : Ok(poll.MapToResponse());
     }
 }
