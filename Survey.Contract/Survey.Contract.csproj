@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Survey.Application\Survey.Application.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+    </ItemGroup>
+
 </Project>

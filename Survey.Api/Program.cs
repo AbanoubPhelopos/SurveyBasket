@@ -1,4 +1,7 @@
-using Survey.Application.Services;
+using System.Reflection;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Survey.Contract.Requests.RequestsValidations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPollServices, PollServices>();
+
+builder.Services
+    .AddFluentValidationAutoValidation()
+    .AddValidatorsFromAssembly(typeof(CreatePollRequestValidation).Assembly);
+
+
 
 var app = builder.Build();
 

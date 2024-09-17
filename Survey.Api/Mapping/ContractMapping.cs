@@ -6,20 +6,11 @@ namespace Survey.Api.Mapping;
 public static class ContractMapping
 {
     
-    public static Poll MapToPoll(this CreatePollRequest request)
+    public static Poll MapToPoll(this CreatePollRequest request,Guid? id = null)
     {
         return new Poll()
         {
-            Id= Guid.NewGuid(),
-            Title = request.Title,
-            Description = request.Description
-        };
-    }
-    public static Poll MapToPoll(this UpdatePollRequest request,Guid id)
-    {
-        return new Poll()
-        {
-            Id= id,
+            Id = id ?? Guid.NewGuid(),
             Title = request.Title,
             Description = request.Description
         };

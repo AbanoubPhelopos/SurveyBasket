@@ -26,7 +26,7 @@ public class PollsController(IPollServices services) : BaseApiController
     }
 
     [HttpPut("{id}")]
-    public IActionResult Update([FromRoute] Guid id, [FromBody] UpdatePollRequest request)
+    public IActionResult Update([FromRoute] Guid id, [FromBody] CreatePollRequest request)
     {
         var isUpdated = services.Update(id, request.MapToPoll(id));
         if (!isUpdated)
