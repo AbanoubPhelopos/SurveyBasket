@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Survey.Application.Data;
-using Microsoft.Extensions.Configuration;
 
 namespace Survey.Api
 {

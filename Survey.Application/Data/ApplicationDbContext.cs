@@ -1,12 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿namespace Survey.Application.Data;
 
-namespace Survey.Application.Data;
-
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
+    : IdentityDbContext<ApplicationUser>(options)
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-    { }
-
     public DbSet<Poll> Polls => Set<Poll>();
     
 }
