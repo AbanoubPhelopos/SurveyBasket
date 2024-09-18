@@ -1,8 +1,4 @@
-﻿using Survey.Api.Mapping;
-using Survey.Application.Services;
-using Survey.Contract.Requests.Polls;
-
-namespace Survey.Api.Controllers;
+﻿namespace Survey.Api.Controllers;
 public class PollsController(IPollServices services) : BaseApiController
 {
     [HttpGet("")]

@@ -1,8 +1,4 @@
-﻿using Survey.Contract.Requests.Polls;
-using Survey.Contract.Responses.Poll;
-
-namespace Survey.Api.Mapping;
-
+﻿namespace Survey.Api.Mapping;
 public static class ContractMapping
 {
     

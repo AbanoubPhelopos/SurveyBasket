@@ -1,4 +1,4 @@
-﻿namespace Survey.Contract.Responses.Poll;
+﻿namespace Survey.Contract.Poll;
 
 public class PollResponse
 {

@@ -1,4 +1,4 @@
-﻿namespace Survey.Application.Services;
+﻿namespace Survey.Api.Services;
 
 public interface IPollServices
 { 

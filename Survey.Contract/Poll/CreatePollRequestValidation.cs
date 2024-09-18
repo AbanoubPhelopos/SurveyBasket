@@ -1,4 +1,4 @@
-﻿namespace Survey.Contract.Requests.RequestsValidations;
+﻿namespace Survey.Contract.Poll;
 
 public class CreatePollRequestValidation : AbstractValidator<CreatePollRequest>
 {

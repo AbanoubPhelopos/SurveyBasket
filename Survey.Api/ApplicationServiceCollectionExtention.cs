@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Survey.Application.Data;
-
-namespace Survey.Api
+﻿namespace Survey.Api
 {
     public static class ApplicationServiceCollectionExtension
     {

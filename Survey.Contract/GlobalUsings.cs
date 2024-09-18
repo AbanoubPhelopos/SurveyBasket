@@ -1,2 +1,2 @@
 ﻿global using FluentValidation;
-global using Survey.Contract.Requests.Polls;
+global using Survey.Contract.Poll;

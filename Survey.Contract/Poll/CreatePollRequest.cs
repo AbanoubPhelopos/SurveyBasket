@@ -1,4 +1,4 @@
-﻿namespace Survey.Contract.Requests.Polls;
+﻿namespace Survey.Contract.Poll;
 
 public class CreatePollRequest
 {
